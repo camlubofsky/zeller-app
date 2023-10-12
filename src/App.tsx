@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import { UserTypeGroup } from './UserTypeGroup';
-import { UserGroup } from './UserGroup';
+import { UserTypeGroup } from './components/UserTypeGroup';
+import { UserGroup } from './components/UserGroup';
 import { useState } from 'react';
 import { useQuery } from '@apollo/client';
 import { ListZellerCustomers } from './graphql/queries';

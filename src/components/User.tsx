@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import React from 'react';
-import { toTitleCase } from './toTitleCase';
+import { toTitleCase } from '../toTitleCase';
 
 interface IUser {
   name: string;

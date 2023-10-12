@@ -6,7 +6,7 @@ import {
   useMediaQuery,
   useTheme,
 } from '@mui/material';
-import { toTitleCase } from './toTitleCase';
+import { toTitleCase } from '../toTitleCase';
 
 interface IUserType {
   type: string;

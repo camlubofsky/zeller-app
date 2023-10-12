@@ -1,7 +1,7 @@
 import { Box, useMediaQuery, useTheme } from '@mui/material';
 import React from 'react';
 import { User } from './User';
-import { toTitleCase } from './toTitleCase';
+import { toTitleCase } from '../toTitleCase';
 
 type TUsers = {
   email: string;

@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { render, screen } from '@testing-library/react';
-import { User } from '../User';
+import { User } from '../components/User';
 
 const testUser = {
   email: 'test1',
@@ -19,7 +19,7 @@ test('User is shown when data is passed to the component', () => {
   // Assert the role of person displayed
   const person1Role = screen.queryByText('Manager');
 
-  // After clicking the button, you expect all people to be displayed
+  // After clicking the button, you expect all parts of the person to be displayed
   expect(person1Name).toBeInTheDocument();
   expect(person1Role).toBeInTheDocument();
 });

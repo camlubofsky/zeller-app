@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { render, screen } from '@testing-library/react';
-import { UserTypeGroup } from '../UserTypeGroup';
+import { UserTypeGroup } from '../components/UserTypeGroup';
 
 const testType = 'ADMIN';
 const testOnChange = jest.fn();
@@ -19,7 +19,9 @@ test('Radio group has options "admin" and "manager"', () => {
 });
 
 test('Admin button is checked', () => {
+  // Render component
   render(<UserTypeGroup selectedUserType={testType} onChange={testOnChange} />);
 
+  // Check that admin button is checked
   expect(screen.getByLabelText(/admin/i)).toBeChecked();
 });
