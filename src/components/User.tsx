@@ -29,7 +29,7 @@ const FirstLetterBox = ({ name }: { name: string }) => {
 
 export const User: React.FC<IUser> = ({ name, role }) => {
   return (
-    <Box
+    <Stack
       sx={{
         display: 'flex',
         flexDirection: 'row',
@@ -49,6 +49,6 @@ export const User: React.FC<IUser> = ({ name, role }) => {
           {toTitleCase(role)}
         </Stack>
       </Box>
-    </Box>
+    </Stack>
   );
 };
