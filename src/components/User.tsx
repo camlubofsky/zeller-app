@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Stack } from '@mui/material';
 import React from 'react';
 import { toTitleCase } from '../toTitleCase';
 
@@ -7,7 +7,7 @@ interface IUser {
   role: string;
 }
 
-const InitialBox = ({ name }: { name: string }) => {
+const FirstLetterBox = ({ name }: { name: string }) => {
   return (
     <Box
       sx={{
@@ -28,28 +28,26 @@ const InitialBox = ({ name }: { name: string }) => {
 };
 
 export const User: React.FC<IUser> = ({ name, role }) => {
-  const nameProps = {
-    fontSize: '1.25rem',
-  };
-
-  const roleProps = {
-    fontSize: '0.75rem',
-    color: 'gray',
-  };
-
   return (
     <Box
       sx={{
         display: 'flex',
         flexDirection: 'row',
         gap: 3,
-        marginY: '1rem',
+        marginY: 2,
       }}
     >
-      <InitialBox name={name} />
+      <FirstLetterBox name={name} />
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
-        <Box sx={nameProps}>{name}</Box>
-        <Box sx={roleProps}>{toTitleCase(role)}</Box>
+        <Stack sx={{ fontSize: '1.25rem' }}>{name}</Stack>
+        <Stack
+          sx={{
+            fontSize: '0.75rem',
+            color: 'gray',
+          }}
+        >
+          {toTitleCase(role)}
+        </Stack>
       </Box>
     </Box>
   );

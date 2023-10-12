@@ -28,9 +28,9 @@ export const UserGroup: React.FC<IUserGroup> = ({ users, type }) => {
     >
       <Box
         sx={{
-          fontWeight: '500',
+          fontWeight: '600',
           fontSize: '1.25rem',
-          mb: '1.5rem',
+          mb: 3,
           color: 'rgb(49, 47, 47)',
         }}
         id="group-label"

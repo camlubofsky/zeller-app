@@ -17,15 +17,15 @@ export const UserTypeGroup: React.FC<IUserTypeGroup> = ({
     <FormControl
       sx={{
         borderBottom: '2px solid rgb(243, 245, 249)',
-        pb: '2rem',
-        mb: '2rem',
+        pb: 4,
+        mb: 4,
       }}
     >
       <Box
         sx={{
-          fontWeight: '500',
+          fontWeight: '600',
           fontSize: '1.25rem',
-          mb: '1.5rem',
+          mb: 3,
           color: 'rgb(49, 47, 47)',
         }}
         id="radio-buttons-group-label"
